@@ -77,11 +77,11 @@ Open Signal Rain from the TV launcher to change settings. Each option supports i
 
 ## Screenshots
 
-<p align="center">
-    <img src="docs/screenshots/signalrain-preview.png" alt="Green luminous geometric rain captured from the running Android TV app" width="49%">
-    <img src="docs/screenshots/signalrain-cyan-preview.png" alt="Cyan luminous geometric streams captured from the running app" width="49%">
-    <img src="docs/screenshots/settings-android-tv.png" alt="Signal Rain settings on an Android TV emulator" width="49%">
-</p>
+<table><tr>
+<td><img src="docs/screenshots/signalrain-preview.png" alt="Green luminous geometric rain captured from the running Android TV app"></td>
+<td><img src="docs/screenshots/signalrain-cyan-preview.png" alt="Cyan luminous geometric streams captured from the running app"></td>
+<td><img src="docs/screenshots/signal-rain-settings-api31.png" alt="Signal Rain settings on an Android TV emulator"></td>
+</tr></table>
 
 Captures come from the running app; device and setting details are recorded in [device verification](docs/VERIFICATION.md).
 

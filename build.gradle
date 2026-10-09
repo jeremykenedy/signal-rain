@@ -12,15 +12,15 @@ java { sourceCompatibility = JavaVersion.VERSION_1_8; targetCompatibility = Java
 
 sourceSets {
     main.java {
-        srcDirs = ['../src/com/jeremykenedy/signalrain']
+        srcDirs = ['src/com/jeremykenedy/signalrain']
         include 'SignalRainOptions.java', 'SettingsValues.java'
     }
-    test.java { srcDirs = ['../coverage-tests', '../tests'] }
+    test.java { srcDirs = ['coverage-tests', 'tests'] }
 }
 
 spotless {
     java {
-        target '../src/**/*.java', '../tests/**/*.java', '../coverage-tests/**/*.java'
+        target fileTree('src') { include '**/*.java' }, fileTree('tests') { include '**/*.java' }, fileTree('coverage-tests') { include '**/*.java' }
         googleJavaFormat('1.24.0')
     }
 }
@@ -41,3 +41,5 @@ jacocoTestCoverageVerification {
 
 check.dependsOn jacocoTestCoverageVerification
 check.dependsOn spotlessCheck
+
+layout.buildDirectory = file('coverage/build')

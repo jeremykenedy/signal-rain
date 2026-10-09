@@ -1,0 +1,17 @@
+name: Device or application problem
+description: Report a reproducible problem or a device verification result.
+body:
+  - type: textarea
+    id: device
+    attributes:
+      label: Device and release
+      description: Include model, OS/API, resolution, app version and whether this is physical hardware or an emulator.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Steps and results
+      description: Include installation, selection, activation, remote controls, sleep/wake and reboot results where relevant. State expected and observed behavior.
+    validations:
+      required: true
