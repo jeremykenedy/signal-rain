@@ -185,7 +185,7 @@ def download_latest_release():
 def banner():
     print()
     print("  +--------------------------------------------------+")
-    print("  |                 SIGNAL RAIN                       |")
+    print("  |                   SIGNAL RAIN                    |")
     print("  |               SCREENSAVER INSTALLER             |")
     print("  +--------------------------------------------------+")
     print()
